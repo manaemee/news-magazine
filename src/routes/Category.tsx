@@ -129,6 +129,7 @@ function Category(){
     const {isLoading, data:news} = useQuery<INews>(String(category), ()=>fetchNews(category));
     const imageUrl = news?.data.slice(0,10).map(n=>n.imageUrl);
     const [bgImg, setBgImg] = useState("");
+    console.log(process.env.PUBLIC_URL);
     return (
         <>
         {isLoading ? <Laoding><FontAwesomeIcon icon={faSpinner} /></Laoding> :     
@@ -171,7 +172,7 @@ function Category(){
             </Link>
             </Menu> 
             <Row>
-                <Link to={`/${process.env.PUBLIC_URL}/${category}/${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
                 <Link to={`${imageUrl?.indexOf(imageUrl?.[1])}`} onMouseOver={() => setBgImg(String(imageUrl?.[1]))}><News><span>#9</span><span></span></News></Link>
                 <Link to={`${imageUrl?.indexOf(imageUrl?.[2])}`}  onMouseOver={() => setBgImg(String(imageUrl?.[2]))}><News><span>#8</span><span></span></News></Link>
                 <Link to={`${imageUrl?.indexOf(imageUrl?.[3])}`} onMouseOver={() => setBgImg(String(imageUrl?.[3]))}><News ><span>#7</span><span></span></News></Link>
