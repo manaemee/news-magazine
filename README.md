@@ -1,0 +1,2 @@
+# news-magazine
+using react
