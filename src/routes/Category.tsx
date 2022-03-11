@@ -141,48 +141,48 @@ function Category(){
               <FontAwesomeIcon icon={faArrowRight} />
               <span>overview</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/sports`}>
+            <Link to={`${process.env.PUBLIC_URL}/sports`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>sports</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/politics`}>
+            <Link to={`${process.env.PUBLIC_URL}/politics`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>politics</span>
               </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/technology`}>
+            <Link to={`${process.env.PUBLIC_URL}/technology`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>technology</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/startup`}>
+            <Link to={`${process.env.PUBLIC_URL}/startup`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>startup</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/entertainment`}>
+            <Link to={`${process.env.PUBLIC_URL}/entertainment`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>entertainment</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/science`}>
+            <Link to={`${process.env.PUBLIC_URL}/science`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>science</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/automobile`}>
+            <Link to={`${process.env.PUBLIC_URL}/automobile`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>automobile</span> 
             </Link>
             </Menu> 
             <Row>
-                <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
-                <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[1])}`} onMouseOver={() => setBgImg(String(imageUrl?.[1]))}><News><span>#9</span><span></span></News></Link>
-                <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[2])}`}  onMouseOver={() => setBgImg(String(imageUrl?.[2]))}><News><span>#8</span><span></span></News></Link>
-                <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[3])}`} onMouseOver={() => setBgImg(String(imageUrl?.[3]))}><News ><span>#7</span><span></span></News></Link>
-                <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[4])}`} onMouseOver={() => setBgImg(String(imageUrl?.[4]))}><News ><span>#6</span><span></span></News></Link>
+                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
+                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[1])}`} onMouseOver={() => setBgImg(String(imageUrl?.[1]))}><News><span>#9</span><span></span></News></Link>
+                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[2])}`}  onMouseOver={() => setBgImg(String(imageUrl?.[2]))}><News><span>#8</span><span></span></News></Link>
+                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[3])}`} onMouseOver={() => setBgImg(String(imageUrl?.[3]))}><News ><span>#7</span><span></span></News></Link>
+                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[4])}`} onMouseOver={() => setBgImg(String(imageUrl?.[4]))}><News ><span>#6</span><span></span></News></Link>
             </Row>
             <Row>
-              <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[5])}`} onMouseOver={() => setBgImg(String(imageUrl?.[5]))}><News ><span>#5</span><span></span></News></Link>
-              <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[6])}`} onMouseOver={() => setBgImg(String(imageUrl?.[6]))}><News ><span>#4</span><span></span></News></Link>
-              <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[7])}`} onMouseOver={() => setBgImg(String(imageUrl?.[7]))}><News ><span>#3</span><span></span></News></Link>
-              <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[8])}`} onMouseOver={() => setBgImg(String(imageUrl?.[8]))}><News ><span>#2</span><span></span></News></Link>
-              <Link to={`/${category}/${imageUrl?.indexOf(imageUrl?.[9])}`} onMouseOver={() => setBgImg(String(imageUrl?.[9]))}><News ><span>#1</span><span></span></News></Link>
+              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[5])}`} onMouseOver={() => setBgImg(String(imageUrl?.[5]))}><News ><span>#5</span><span></span></News></Link>
+              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[6])}`} onMouseOver={() => setBgImg(String(imageUrl?.[6]))}><News ><span>#4</span><span></span></News></Link>
+              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[7])}`} onMouseOver={() => setBgImg(String(imageUrl?.[7]))}><News ><span>#3</span><span></span></News></Link>
+              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[8])}`} onMouseOver={() => setBgImg(String(imageUrl?.[8]))}><News ><span>#2</span><span></span></News></Link>
+              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[9])}`} onMouseOver={() => setBgImg(String(imageUrl?.[9]))}><News ><span>#1</span><span></span></News></Link>
             </Row>
             <CenterImg style={{backgroundImage: "url(" + bgImg + ")"}}></CenterImg>
             <Footer>
