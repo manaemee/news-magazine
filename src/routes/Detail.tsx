@@ -80,7 +80,7 @@ function Detail(){
     return(
         <>
         <Container>
-            <Header><Link to="/all">Home</Link></Header>
+            <Header><Link to={`${process.env.PUBLIC_URL}/all`}>Home</Link></Header>
             <Main>
                 <Title>{array?.title}</Title>
                 {isLoading ? <Content>"Plase Wait a minute"</Content> : <Content>{array?.content}</Content>}       
