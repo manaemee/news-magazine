@@ -9,8 +9,8 @@ function Router(){
     <BrowserRouter>
         <Routes>
             <Route path={`${process.env.PUBLIC_URL}/`}  element={<Home/>}></Route>
-            <Route path=":category" element={<Category/>}></Route>
-            <Route path=":category/:index" element={<Detail/>}></Route>
+            <Route path={`${process.env.PUBLIC_URL}/:category`} element={<Category/>}></Route>
+            <Route path={`${process.env.PUBLIC_URL}/:category/:index`} element={<Detail/>}></Route>
         </Routes>
     </BrowserRouter>
         );
