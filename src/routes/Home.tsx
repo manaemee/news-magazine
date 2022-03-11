@@ -8,6 +8,7 @@ import { isDarkAtom } from "../atom";
 const Container = styled.div`
 background-color:${props=>props.theme.boxColor} ;
 height:100vh ;
+
 `;
 const Header = styled.header`
 display:flex ;
@@ -90,6 +91,23 @@ animation:${ControllDots} 4s infinite;
 }
 }
 `;
+const Nomobile = styled.div`
+position: fixed;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 99;
+height: 100vh;
+width: 100vw;
+font-size: 32px;
+font-weight: 700;
+background-color: ${props=>props.theme.boxColor};
+@media screen and (min-width: 800px) {
+    display: none;
+}
+`;
+
 function Overview(){
   const isDark = useRecoilValue(isDarkAtom)
   const setDarkAtom = useSetRecoilState(isDarkAtom);
@@ -121,7 +139,11 @@ function Overview(){
         <span><FontAwesomeIcon icon={faEnvelope}/></span>
         <span><FontAwesomeIcon icon={faBullhorn}/></span>
       </Footer>
+      <Nomobile>
+      <span>Sorry, your screen is too Small!</span>
+      </Nomobile>
       </Container>
+      
     );
 }
 

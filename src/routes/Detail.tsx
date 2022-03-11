@@ -12,6 +12,7 @@ top: 0;
 width:100% ;
 padding:5vh 10vh;
 text-transform:uppercase ;
+background-color:${props=>props.theme.boxColor} ;
 `;
 const Main = styled.div`
 background-color: ${props=>props.theme.boxColor};
