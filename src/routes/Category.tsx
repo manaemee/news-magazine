@@ -137,7 +137,7 @@ function Category(){
             <Link to={`${process.env.PUBLIC_URL}/`}><Header>today's paper</Header></Link>
             <Header>{category}</Header>
             <Menu>
-            <Link to={`${process.env.PUBLIC_URL}/news-magazine/all`}>
+            <Link to={`${process.env.PUBLIC_URL}/all`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>overview</span>
             </Link>
@@ -171,18 +171,18 @@ function Category(){
             </Link>
             </Menu> 
             <Row>
-                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
-                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[1])}`} onMouseOver={() => setBgImg(String(imageUrl?.[1]))}><News><span>#9</span><span></span></News></Link>
-                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[2])}`}  onMouseOver={() => setBgImg(String(imageUrl?.[2]))}><News><span>#8</span><span></span></News></Link>
-                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[3])}`} onMouseOver={() => setBgImg(String(imageUrl?.[3]))}><News ><span>#7</span><span></span></News></Link>
-                <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[4])}`} onMouseOver={() => setBgImg(String(imageUrl?.[4]))}><News ><span>#6</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[0])}`} onMouseOver={() => setBgImg(String(imageUrl?.[0]))}><News><span>#10</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[1])}`} onMouseOver={() => setBgImg(String(imageUrl?.[1]))}><News><span>#9</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[2])}`}  onMouseOver={() => setBgImg(String(imageUrl?.[2]))}><News><span>#8</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[3])}`} onMouseOver={() => setBgImg(String(imageUrl?.[3]))}><News ><span>#7</span><span></span></News></Link>
+                <Link to={`${imageUrl?.indexOf(imageUrl?.[4])}`} onMouseOver={() => setBgImg(String(imageUrl?.[4]))}><News ><span>#6</span><span></span></News></Link>
             </Row>
             <Row>
-              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[5])}`} onMouseOver={() => setBgImg(String(imageUrl?.[5]))}><News ><span>#5</span><span></span></News></Link>
-              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[6])}`} onMouseOver={() => setBgImg(String(imageUrl?.[6]))}><News ><span>#4</span><span></span></News></Link>
-              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[7])}`} onMouseOver={() => setBgImg(String(imageUrl?.[7]))}><News ><span>#3</span><span></span></News></Link>
-              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[8])}`} onMouseOver={() => setBgImg(String(imageUrl?.[8]))}><News ><span>#2</span><span></span></News></Link>
-              <Link to={`${category}/${imageUrl?.indexOf(imageUrl?.[9])}`} onMouseOver={() => setBgImg(String(imageUrl?.[9]))}><News ><span>#1</span><span></span></News></Link>
+              <Link to={`${imageUrl?.indexOf(imageUrl?.[5])}`} onMouseOver={() => setBgImg(String(imageUrl?.[5]))}><News ><span>#5</span><span></span></News></Link>
+              <Link to={`${imageUrl?.indexOf(imageUrl?.[6])}`} onMouseOver={() => setBgImg(String(imageUrl?.[6]))}><News ><span>#4</span><span></span></News></Link>
+              <Link to={`${imageUrl?.indexOf(imageUrl?.[7])}`} onMouseOver={() => setBgImg(String(imageUrl?.[7]))}><News ><span>#3</span><span></span></News></Link>
+              <Link to={`${imageUrl?.indexOf(imageUrl?.[8])}`} onMouseOver={() => setBgImg(String(imageUrl?.[8]))}><News ><span>#2</span><span></span></News></Link>
+              <Link to={`${imageUrl?.indexOf(imageUrl?.[9])}`} onMouseOver={() => setBgImg(String(imageUrl?.[9]))}><News ><span>#1</span><span></span></News></Link>
             </Row>
             <CenterImg style={{backgroundImage: "url(" + bgImg + ")"}}></CenterImg>
             <Footer>
