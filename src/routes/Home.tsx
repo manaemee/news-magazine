@@ -109,7 +109,7 @@ function Overview(){
         <Subtitle>
         Find the latest breaking news and information on the top stories.
         </Subtitle>
-      <Link to={`${process.env.PUBLIC_URL}/all`}>
+      <Link to="all">
       <Button>
         <span>Start Now</span>
         <FontAwesomeIcon icon={faCheck}/>
