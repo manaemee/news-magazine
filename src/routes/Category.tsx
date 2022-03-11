@@ -134,7 +134,7 @@ function Category(){
         {isLoading ? <Laoding><FontAwesomeIcon icon={faSpinner} /></Laoding> :     
          <Container>
            <Helmet><title>magazine</title></Helmet>
-            <Link to="/"><Header>today's paper</Header></Link>
+            <Link to={`${process.env.PUBLIC_URL}/`}><Header>today's paper</Header></Link>
             <Header>{category}</Header>
             <Menu>
             <Link to="/all">
