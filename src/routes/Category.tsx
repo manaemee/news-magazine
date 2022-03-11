@@ -137,35 +137,35 @@ function Category(){
             <Link to={`${process.env.PUBLIC_URL}/`}><Header>today's paper</Header></Link>
             <Header>{category}</Header>
             <Menu>
-            <Link to={`${process.env.PUBLIC_URL}/all`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/all`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>overview</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/sports`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/sports`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>sports</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/politics`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/politics`}>
               <FontAwesomeIcon icon={faArrowRight} />
               <span>politics</span>
               </Link>
-            <Link to={`${process.env.PUBLIC_URL}/technology`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/technology`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>technology</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/startup`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/startup`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>startup</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/entertainment`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/entertainment`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>entertainment</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/science`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/science`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>science</span>
             </Link>
-            <Link to={`${process.env.PUBLIC_URL}/automobile`}>
+            <Link to={`${process.env.PUBLIC_URL}/news-magazine/automobile`}>
                 <FontAwesomeIcon icon={faArrowRight} />
                 <span>automobile</span> 
             </Link>
