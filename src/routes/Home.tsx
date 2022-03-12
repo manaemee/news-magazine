@@ -8,7 +8,6 @@ import { isDarkAtom } from "../atom";
 const Container = styled.div`
 background-color:${props=>props.theme.boxColor} ;
 height:100vh ;
-
 `;
 const Header = styled.header`
 display:flex ;
@@ -33,7 +32,7 @@ display:flex ;
 flex-direction:column;
 align-items:center ;
 background-color:${props=>props.theme.boxColor} ;
-padding-top: 110px;
+padding-top: $padding;
 `;
 const Subtitle = styled.h1`
 margin-bottom: 100px;

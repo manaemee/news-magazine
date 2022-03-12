@@ -77,7 +77,7 @@ const Row = styled.div`
             display: none;
           }
           span:last-child::after{
-            content:"Click and Read " ;
+            content:"Click and Read" ;
           }
         }
       }
@@ -92,7 +92,7 @@ const CenterImg = styled.div`
     background-position: center;
 `;
 const scrollText = keyframes`
-    0% {
+  0% {
     transform: translateX(-135%);
   }
   50% {
@@ -129,7 +129,6 @@ function Category(){
     const {isLoading, data:news} = useQuery<INews>(String(category), ()=>fetchNews(category));
     const imageUrl = news?.data.slice(0,10).map(n=>n.imageUrl);
     const [bgImg, setBgImg] = useState("");
-    console.log(process.env.PUBLIC_URL);
     return (
         <>
         {isLoading ? <Laoding><FontAwesomeIcon icon={faSpinner} /></Laoding> :     
