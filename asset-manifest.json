@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/news-magazine/static/js/main.9513b20e.js",
+    "main.js": "/news-magazine/static/js/main.4730b5ad.js",
     "index.html": "/news-magazine/index.html",
-    "main.9513b20e.js.map": "/news-magazine/static/js/main.9513b20e.js.map"
+    "main.4730b5ad.js.map": "/news-magazine/static/js/main.4730b5ad.js.map"
   },
   "entrypoints": [
-    "static/js/main.9513b20e.js"
+    "static/js/main.4730b5ad.js"
   ]
 }
