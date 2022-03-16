@@ -32,10 +32,10 @@ display:flex ;
 flex-direction:column;
 align-items:center ;
 background-color:${props=>props.theme.boxColor} ;
-padding-top: $padding;
+margin-top:10vh ;
 `;
 const Subtitle = styled.h1`
-margin-bottom: 100px;
+margin-bottom: 10vh;
 font-size:22px ;
 `;
 const Button = styled.div`
